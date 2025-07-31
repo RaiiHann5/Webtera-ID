@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Media</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header class="text-gray-600 body-font bg-white shadow-sm">
+        <div class="container mx-auto flex items-center justify-between p-5">
+            <!-- Logo -->
+            <a class="flex items-center text-gray-900 font-medium title-font">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                     class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                <span class="ml-3 text-xl">Bahasa Indonesia</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center text-base space-x-6">
+                <a href="#" class="hover:text-indigo-600 transition-colors duration-200">Beranda</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors duration-200">Tentang</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors duration-200">Kontak</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors duration-200">Panduan</a>
+                
+                <!-- Desktop Button -->
+                <button class="inline-flex items-center bg-indigo-600 text-white border-0 py-2 px-4 focus:outline-none hover:bg-indigo-700 rounded text-base transition-colors duration-200 ml-6">
+                    Kunjungi
+                    <svg fill="none" stroke="currentColor" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-toggle" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-200">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 shadow-lg transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <div class="container mx-auto px-5 py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 hover:bg-gray-50 px-3 py-2 rounded transition-all duration-200">
+                        Beranda
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 hover:bg-gray-50 px-3 py-2 rounded transition-all duration-200">
+                        Tentang
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 hover:bg-gray-50 px-3 py-2 rounded transition-all duration-200">
+                        Kontak
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 hover:bg-gray-50 px-3 py-2 rounded transition-all duration-200">
+                        Panduan
+                    </a>
+                    
+                    <!-- Mobile Button -->
+                    <div class="pt-2 border-t border-gray-200">
+                        <button class="w-full inline-flex items-center justify-center bg-indigo-600 text-white border-0 py-3 px-4 focus:outline-none hover:bg-indigo-700 rounded text-base transition-colors duration-200">
+                            Kunjungi
+                            <svg fill="none" stroke="currentColor" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<section class="text-gray-600 body-font mx-9">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Kuasai Bahasa Indonesia
+        <br class="hidden lg:inline-block">, Mudah dan Cepat!
+      </h1>
+      <p class="mb-8 leading-relaxed">Dapatkan pengalaman belajar Bahasa Indonesia yang seru dan efektif lewat materi terstruktur, latihan soal yang bervariasi, dan tampilan yang memudahkanmu fokus.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br border-0 py-2 px-6 focus:outline-none rounded text-lg">Eksplor</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-300 border-0 py-2 px-6 focus:outline-none rounded text-lg">Jelajahi Materi</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">EKSPLOR PEMBELAJARAN BAHASA INDONESIA</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Asah Pemahamanmu Lewat Media Interaktif</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Pelajari Bahasa Indonesia secara menyenangkan dan terstruktur. Mulai dari materi, video, kuis, hingga permainan interaktif yang dirancang untuk meningkatkan pemahamanmu.</p>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Materi</h2>
+        <p class="leading-relaxed text-base mb-4">Pelajari berbagai jenis teks, struktur kalimat, dan kaidah kebahasaan melalui ringkasan dan modul mudah dipahami.</p>
+        <button type="button" 
+  class="inline-block rounded-full border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out 
+    hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-white 
+    focus:border-primary-600 focus:bg-primary-50/50 focus:text-white 
+    active:border-primary-700 active:bg-primary-600 active:text-white 
+    motion-reduce:transition-none 
+    dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+  data-twe-ripple-init>
+  Jelajahi
+</button>
+
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Video</h2>
+        <p class="leading-relaxed text-base mb-4">Tonton video pembelajaran yang menjelaskan topik-topik penting secara singkat dan menarik, cocok untuk semua gaya belajar.</p>
+       <button type="button" 
+  class="inline-block rounded-full border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out 
+    hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-white 
+    focus:border-primary-600 focus:bg-primary-50/50 focus:text-white 
+    active:border-primary-700 active:bg-primary-600 active:text-white 
+    motion-reduce:transition-none 
+    dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+  data-twe-ripple-init>
+  Jelajahi
+</button>
+
+          
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Kuis</h2>
+        <p class="leading-relaxed text-base mb-4">Latihan soal interaktif untuk mengukur penguasaan materi. Cocok untuk belajar mandiri atau persiapan ujian.</p>
+      <button type="button" 
+  class="inline-block rounded-full border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out 
+    hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-white 
+    focus:border-primary-600 focus:bg-primary-50/50 focus:text-white 
+    active:border-primary-700 active:bg-primary-600 active:text-white 
+    motion-reduce:transition-none 
+    dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+  data-twe-ripple-init>
+  jelajahi
+</button>
+
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Permainan</h2>
+        <p class="leading-relaxed text-base mb-4">Nikmati permainan edukatif yang membantu kamu memahami Bahasa Indonesia dengan cara seru dan menyenangkan.</p>
+       <button type="button" 
+  class="inline-block rounded-full border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out 
+    hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-white 
+    focus:border-primary-600 focus:bg-primary-50/50 focus:text-white 
+    active:border-primary-700 active:bg-primary-600 active:text-white 
+    motion-reduce:transition-none 
+    dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+  data-twe-ripple-init>
+  Jelajahi
+</button>
+
+      </div>
+    </div>
+    <button class="flex mx-auto mt-16 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br border-0 py-2 px-8 focus:outline-none rounded text-lg">Jelajahi Materi</button>
+  </div>
+</section>
+
+<!-- About Section -->
+ <section class="text-gray-600 body-font mx-19">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Kenali Platform
+        <br class="hidden lg:inline-block">Media Pembelajaran Kami!
+      </h1>
+      <p class="mb-8 leading-relaxed">Kami menghadirkan platform pembelajaran Bahasa Indonesia yang interaktif dan terarah. Siswa dapat mempelajari berbagai jenis teks, memahami struktur kalimat, serta menguasai kaidah kebahasaan melalui materi visual, latihan soal, dan fitur penilaian yang dirancang untuk menunjang pemahaman secara bertahap.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br border-0 py-2 px-6 focus:outline-none  rounded text-lg">Eksplor Lebih Lanjut...</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimoni guru/siswa -->
+ <section class="text-gray-600 body-font mx-8">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimoni Tentang Website Ini</h1>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed mb-6">“Website ini sangat membantu proses belajar mengajar. Materi yang disajikan ringkas namun mendalam, dan siswa saya jadi lebih antusias dalam memahami jenis-jenis teks dan kaidah kebahasaan.”</p>
+          <a class="inline-flex items-center">
+            <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Nahiz Fauzi, M.Pd.</span>
+              <span class="text-gray-500 text-sm">GURU BAHASA INDONESIA KELAS 8</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed mb-6">“Dengan adanya media pembelajaran ini, saya dapat memberikan variasi metode belajar yang lebih interaktif dan menyenangkan. Kontennya sudah sesuai dengan kurikulum, dan sangat cocok untuk menunjang pembelajaran mandiri maupun kelompok. Hasil belajar siswa juga jadi lebih meningkat.”</p>
+          <a class="inline-flex items-center">
+            <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Naufal Rasyid, S.Pd.</span>
+              <span class="text-gray-500 text-sm">GURU BAHASA INDONESIA KELAS 9</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed mb-6">“Tampilannya menarik dan gampang dimengerti. Saya paling suka bagian kuisnya karena bisa langsung tahu apakah saya sudah paham atau belum.”</p>
+          <a class="inline-flex items-center">
+            <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Muhammad Nurdin Anshori</span>
+              <span class="text-gray-500 text-sm">SISWA KELAS 8A</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed mb-6">Biasanya belajar Bahasa Indonesia terasa membosankan, tapi lewat website ini jadi lebih seru. Penjelasannya jelas, banyak ilustrasi yang membantu, dan ada latihan soal buat ngetes pemahaman. Sekarang saya jadi lebih percaya diri saat ulangan!</p>
+          <a class="inline-flex items-center">
+            <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Fachri Al Asy'ari</span>
+              <span class="text-gray-500 text-sm">SISWA KELAS 9B</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+
+<section class="text-gray-600 body-font -mt-6">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Eksplorasi Ilmu. Kapan pun, di mana pun. Mulai perjalanan belajarmu sekarang bersama WebTera.</h1>
+      <button class="flex-shrink-0 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br border-0 py-2 px-8 focus:outline-none rounded-2xl text-lg mt-10 sm:mt-0">Ayo Belajar Sekarang!</button>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer  -->
+ <footer class="text-gray-50 body-font bg-blue-950">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col  ">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left mx-8">
+      <!-- Logo di Footer -->
+<footer class=" py-6 px-4">
+  <div class="container mx-auto flex justify-center">
+    <img src="assets/webtera_logo_transparent.png" alt="WebTera Logo" class="h-16 scale-125 md:scale-350 transition-transform duration-300 -mt-8 mr-10" />
+  </div>
+</footer>
+
+
+      <p class="ml-2 text-sm text-gray-200 ml-10 mb-3 -mt-3">Platform all-in-one untuk membangun website pendidikan, kuis interaktif, portofolio, dan konten digital lainnya. WebTera bikin semuanya jadi lebih mudah.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">NAVIGASI</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Beranda</a>
+          </li>
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Tentang</a>
+          </li>
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Kontak</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">LINK CEPAT</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Materi</a>
+          </li>
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Video</a>
+          </li>
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Kuis</a>
+          </li>
+          <li>
+            <a class="text-gray-50 hover:text-gray-800">Permainan</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-blue-950 text-sm text-center sm:text-left">© 2025 Webtera —-
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="textblue-950 ml-1" target="_blank">@webtera.id</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-blue-950" href="#">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-blue-950" href="#">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-blue-950" href="#">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-blue-950" href="#">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- Script toggle menu -->
+ <script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        let isMenuOpen = false;
+
+        menuToggle.addEventListener('click', function() {
+            isMenuOpen = !isMenuOpen;
+            
+            if (isMenuOpen) {
+                // Open menu
+                mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                // Close menu
+                mobileMenu.style.maxHeight = '0px';
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        // Close menu when clicking on mobile links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                isMenuOpen = false;
+                mobileMenu.style.maxHeight = '0px';
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // Close menu when window is resized to desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) { // md breakpoint
+                isMenuOpen = false;
+                mobileMenu.style.maxHeight = '0px';
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target) && isMenuOpen) {
+                isMenuOpen = false;
+                mobileMenu.style.maxHeight = '0px';
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    </script>
+
+
+</body>
+</html>
